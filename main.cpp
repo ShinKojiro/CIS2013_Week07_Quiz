@@ -23,18 +23,35 @@ int main(){
     while(!inStream.eof()){
         inStream.get(next);
         charCount++;
-        if(next == 'A'){
-            bigACount++;
+        switch(next){
+            case 'A':
+                bigACount++;
+            break;
+            case 'a':
+                littleACount++;
+            break;
+            case 'F':
+                bigFCount++;
+            break;
+            case 'b':
+                littleBCount++;
+            break;
+            default:
+                //charCount++;
+            break;
         }
-        if(next == 'a'){
-            littleACount++;
-        }
-        if(next == 'F'){
-            bigFCount++;
-        }
-        if(next == 'b'){
-            littleBCount++;
-        }
+        // if(next == 'A'){
+        //     bigACount++;
+        // }
+        // if(next == 'a'){
+        //     littleACount++;
+        // }
+        // if(next == 'F'){
+        //     bigFCount++;
+        // }
+        // if(next == 'b'){
+        //     littleBCount++;
+        // }
     }
     
     cout << "Character counts in info.dat:" << endl;
