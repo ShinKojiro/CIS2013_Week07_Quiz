@@ -36,11 +36,16 @@ int main(){
             littleBCount++;
         }
     }
-
+    
+    cout << "Character counts in info.dat:" << endl;
     cout << "Total: " << charCount << endl;
     cout << "A's: " << bigACount << endl;
     cout << "a's: " << littleACount << endl;
     cout << "F's: " << bigFCount << endl;
     cout << "b's: " << littleBCount << endl;
     cout << "And that is all." << endl;
+
+    inStream.close();
+
+    return 0;
 }
