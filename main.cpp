@@ -7,11 +7,7 @@ using namespace std;
 int main(){
     ifstream inStream;
     ofstream outStream;
-    int charCount = 0;
-    int littleACount = 0;
-    int bigACount = 0;
-    int bigFCount = 0;
-    int littleBCount = 0;
+    int charCount = 0, littleACount = 0, bigACount = 0, bigFCount = 0, littleBCount = 0;
     char next;
 
     inStream.open("info.dat");
