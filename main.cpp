@@ -15,6 +15,10 @@ int main(){
     char next;
 
     inStream.open("info.dat");
+    if(inStream.fail()){
+        cout << "Failed to open file";
+        exit(1);
+    }
 
     while(!inStream.eof()){
         inStream.get(next);
